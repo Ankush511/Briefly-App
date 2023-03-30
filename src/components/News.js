@@ -102,7 +102,6 @@ export class News extends Component {
                 <div className="col-md-4" key={element.url}>
                   <NewsItem
                     title={element.title ? element.title.slice(0, 65) : ""}
-                    // time = {element.publishedAt}
                     description={
                       element.description
                         ? element.description.slice(0, 88)
@@ -110,6 +109,9 @@ export class News extends Component {
                     }
                     imageUrl={element.urlToImage}
                     newsUrl={element.url}
+                    date = {element.publishedAt}
+                    author = {element.author}
+                    source = {element.source.name}
                   />
                 </div>
               );
