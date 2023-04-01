@@ -19,13 +19,13 @@ export class NewsItem extends Component {
           <div className="card-body">
             <h5 className="card-title">
               {title}...
-              <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left: '20%', zIndex: '1'}}>
+              <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left: '20%', zIndex: '1'}}>
                 {source}
-                <span class="visually-hidden">unread messages</span>
+                <span className="visually-hidden"></span>
               </span>
             </h5>
             <p className="card-text">
-              <small className="text-body-secondary">
+              <small className="text-danger" >
                 By {author ? author : "Unknown"} on{" "}
                 {new Date(date).toGMTString()}
               </small>
